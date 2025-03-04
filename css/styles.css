@@ -1,3 +1,6 @@
+body{
+  font-family: "kanit",sans-serif;
+}
 nav {
   display: flex;
   justify-content: center; 
@@ -46,4 +49,16 @@ nav ul li a {
   .icon img {
     width: 50px;
     margin-right: 10px;
+  }
+
+  .card{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+  }
+  .card-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
