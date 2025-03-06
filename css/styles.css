@@ -1,12 +1,19 @@
-body{
+@import '../node_modules/animate.css/animate.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
+  background-color: #ffdfdf;
 }
 nav {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 80px; 
-  background-color: #333; 
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #d07199;
 }
 
 nav ul {
@@ -14,7 +21,6 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  
 }
 
 nav ul li {
@@ -26,52 +32,69 @@ nav ul li a {
   text-decoration: none;
 }
 
-  .container{
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-  .presentazione{
-    display: flex;
-  }
-  .intro{
-    margin-left: 100px;
-    align-items: center;
-    display: flex;
-  }
-  .presentazione img{
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-  }
-  .icon-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 20px;
-   
-  }
-  .icon img {
-    width: 50px;
-    margin-right: 10px;
-  }
 
-  .card{
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 300px;
-    padding: 20px;
-  }
-  .card-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .img-card img{
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-  }
-  .social-media img{
-    width: 50px;
-  }
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+}
+.presentazione {
+  display: flex;
+  margin: 50px;
+}
+.intro {
+  margin-left: 100px;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+.presentazione img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #d07199;
+  box-shadow: 10px -8px 0px #d07199;
+}
+.icon-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.icon img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+}
+.card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.img-card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+.social-media img {
+  width: 50px;
+}
+
+h1{
+  font-size: 45px;
+  font-weight: 600;
+  color: #d07199;
+  margin: 20px;
+}
+span{
+  font-size: 35px;
+  font-weight: bold;
+  color: #d07199;
+}
