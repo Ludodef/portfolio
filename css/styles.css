@@ -1,4 +1,6 @@
-@import '../node_modules/animate.css/animate.css';
+@import "../node_modules/animate.css/animate.css";
+
+/*GENERALI*/
 
 html {
   scroll-behavior: smooth;
@@ -8,6 +10,8 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #ffdfdf;
 }
+
+/*MENU'*/
 nav {
   display: flex;
   justify-content: center;
@@ -32,15 +36,44 @@ nav ul li a {
   text-decoration: none;
 }
 
-
+/*HEADER*/
 .container {
   margin: 0 auto;
-  max-width: 80%;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #d07199;
+  margin: 20px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffdfdf;
+  margin: 20px;
+  padding: 20px;
+}
+
+span {
+  font-size: 35px;
+  font-weight: bold;
+  color: #d07199;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  margin: 20px;
 }
 .presentazione {
   display: flex;
   margin: 50px;
+  justify-content: center;
 }
+
+/*PRESENTAZIONE*/
 .intro {
   margin-left: 100px;
   align-content: center;
@@ -56,15 +89,70 @@ nav ul li a {
   border: 2px solid #d07199;
   box-shadow: 10px -8px 0px #d07199;
 }
+
+/*ABOUT*/
+.about {
+  background-color: #d07199;
+  height: 500px;
+  max-width: fit-content;
+  text-align: center;
+  background-image: url(../img/pngimg.com\ -\ sakura_PNG42.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*FORMAZIONE*/
+.experience {
+  height: 500px;
+  max-width: fit-content;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.experience h3 {
+  color: #d07199;
+}
+.experience p {
+  color: #d07199;
+}
+
+/*SKILL*/
+.skills{
+  height: 500px;
+  background-color: #d07199;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
 .icon-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 20px;
 }
+.icon{
+  background-image: url(../img/sakura.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  
+
+}
+
+
 .icon img {
   width: 50px;
   margin-right: 10px;
+  margin-top: 50px;
+  
 }
 
 .card {
@@ -87,14 +175,5 @@ nav ul li a {
   width: 50px;
 }
 
-h1{
-  font-size: 45px;
-  font-weight: 600;
-  color: #d07199;
-  margin: 20px;
-}
-span{
-  font-size: 35px;
-  font-weight: bold;
-  color: #d07199;
-}
+
+
