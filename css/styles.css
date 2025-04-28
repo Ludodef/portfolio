@@ -1,4 +1,4 @@
-@import "../node_modules/animate.css/animate.css";
+
 
 /*GENERALI*/
 
@@ -11,6 +11,12 @@ body {
   background-color: #ffdfdf;
 }
 
+.box{
+  margin: 0 auto;
+  width: 900px;
+  
+}
+
 /*MENU'*/
 nav {
   display: flex;
@@ -18,6 +24,10 @@ nav {
   align-items: center;
   height: 80px;
   background-color: #d07199;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 nav ul {
@@ -36,6 +46,12 @@ nav ul li a {
   text-decoration: none;
 }
 
+.menu-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
 /*HEADER*/
 .container {
   margin: 0 auto;
@@ -45,7 +61,7 @@ h1 {
   font-size: 45px;
   font-weight: 600;
   color: #d07199;
-  margin: 20px;
+  /*margin: 20px;*/
 }
 
 h3 {
@@ -60,20 +76,35 @@ span {
   font-size: 35px;
   font-weight: bold;
   color: #d07199;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid #d07199;
+  display: inline-block;
+  animation: typing 3s steps(30, end) forwards, blink .75s step-end infinite;
 }
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 18ch }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #d07199; }
+}
+
 
 p {
   font-size: 20px;
   color: white;
-  margin: 20px;
 }
+/*PRESENTAZIONE*/
 .presentazione {
   display: flex;
-  margin: 50px;
+  margin: 150px;
   justify-content: center;
 }
 
-/*PRESENTAZIONE*/
 .intro {
   margin-left: 100px;
   align-content: center;
@@ -94,7 +125,6 @@ p {
 .about {
   background-color: #d07199;
   height: 500px;
-  max-width: fit-content;
   text-align: center;
   background-image: url(../img/pngimg.com\ -\ sakura_PNG42.png);
   background-position: bottom;
@@ -108,7 +138,6 @@ p {
 /*FORMAZIONE*/
 .experience {
   height: 500px;
-  max-width: fit-content;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -122,14 +151,13 @@ p {
 }
 
 /*SKILL*/
-.skills{
+.skills {
   height: 500px;
   background-color: #d07199;
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
 }
 .icon-box {
   display: flex;
@@ -137,22 +165,37 @@ p {
   justify-content: space-between;
   font-size: 20px;
 }
-.icon{
+.icon {
   background-image: url(../img/sakura.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   width: 200px;
-  
-
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease; 
 }
 
+.icon:hover {
+  transform: scale(1.1); /
+}
+
+.icon:hover p {
+  color: #ffdfdf;
+}
 
 .icon img {
   width: 50px;
-  margin-right: 10px;
-  margin-top: 50px;
-  
+  margin: 0;
+}
+
+.icon p {
+  margin-top: 10px; 
+  color: white;
+  font-weight: bold;
 }
 
 .card {
@@ -174,6 +217,3 @@ p {
 .social-media img {
   width: 50px;
 }
-
-
-
