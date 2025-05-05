@@ -201,7 +201,7 @@ p {
 
 /*PROGETTI*/
 .projects {
-  height: 500px;
+  height: 800px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -310,6 +310,65 @@ p {
 .container-card .card .face.face2 .content a:hover{
   background: #d07199;;
   color: #fff;
+}
+
+
+/*CONTATTI*/
+
+.contact {
+  background-color: #d07199;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact p {
+  margin-bottom: 10px;
+}
+
+#contact-form {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+input[type="submit"] {
+  background-color: #d07199;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+input[type="submit"]:hover {
+  background-color: #b45f84;
+}
+
+.social-media {
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+hr{
+  color: white;
+  width: 20%;
+  margin-top: 20px;
 }
 .social-media img {
   width: 50px;

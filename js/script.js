@@ -20,7 +20,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 const links = document.querySelectorAll(".menu-link");
 
 function activateLinkOnScroll() {
-  let scrollPosition = window.scrollY + 81; 
+  let scrollPosition = window.scrollY + 80; 
   
   document.querySelectorAll("section").forEach(section => {
     if (
