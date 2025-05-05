@@ -10,11 +10,29 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         message: document.getElementById("message").value,
         reply_to: document.getElementById("email").value
     }).then(function(response) {
-        alert("Email inviata con successo!");
+        showPopup("Messaggio inviato con successo!", "success");
+        document.getElementById("contact-form").reset();
     }, function(error) {
-        alert("Errore nell'invio dell'email: " + JSON.stringify(error));
+        showPopup("Messaggio non inviato. Riprova.", "error");
+        console.error("Errore:", error);
     });
 });
+
+function showPopup(message, type) {
+  const popup = document.getElementById("popup-message");
+  const text = document.getElementById("popup-text");
+
+  text.textContent = message;
+
+  // Rimuove hidden e aggiunge show + success/error
+  popup.classList.remove("hidden");
+  popup.classList.add("show", type);
+
+  setTimeout(() => {
+      popup.classList.remove("show", "success", "error");
+      popup.classList.add("hidden");
+  }, 3000);
+}
 
 
 const links = document.querySelectorAll(".menu-link");
